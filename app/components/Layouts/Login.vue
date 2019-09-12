@@ -4,8 +4,8 @@
             <Image src="~/assets/images/logo.png" class="logo" />
             <TextDefault password="false" v-model="username" placeholder="Tên đăng nhập" />
             <TextDefault password="true" v-model="password" placeholder="Mật khẩu" />
-            <BtnDefault text="Đăng Nhập" @tap="login"/>
-            <BtnPrimaTran text="Đăng Ký" @tap="register"/>
+            <BtnDefault text="Đăng Nhập" @tap="login" />
+            <BtnPrimaTran text="Đăng Ký" @tap="register" />
         </FlexboxLayout>
     </Page>
 </template>
@@ -17,6 +17,9 @@
     import BtnDefault from '../Child/BtnDefault';
     import Register from './Register';
     import TextDefault from '../Child/TextDefault';
+    import route from "../../route";
+
+    // import {AwesomeLoaders} from 'nativescript-awesome-loaders';
 
     export default {
         name: 'Login',
@@ -38,6 +41,10 @@
             BtnDefault,
             TextDefault
         },
+        mounted(){
+            // let li = new AwesomeLoaders();
+            // console.log(li);
+        },
         methods: {
             login() {
                 /*var toast = Toast.makeText("Hello World");
@@ -58,7 +65,7 @@
                 }).then(() => {
                     this.$navigateTo(Register);
                 }, () => {});*/
-
+                this.$navigateTo(route.home);
 
             }
         }
@@ -74,6 +81,10 @@
     }
 
     .logo {
+        animation-name: bounceIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
         width: 100%;
         height: 15%;
         display: block;

@@ -3564,6 +3564,11 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+nativescript-carousel@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/nativescript-carousel/-/nativescript-carousel-6.1.0.tgz#e4f1626b183cb56282d3930be578d0358821206b"
+  integrity sha512-U0ju6oa/JK+bXZpuD31pIfrSSvyRXXrh3isvP6PBvOFNLSrhrVA9vMgybOZPkZXRn1Q7wE1ou+fhWNLDno779A==
+
 nativescript-dev-webpack@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/nativescript-dev-webpack/-/nativescript-dev-webpack-1.2.0.tgz#ccfbffed438075d4bd7a9088a7a80973b9dfff21"
@@ -3617,6 +3622,18 @@ nativescript-hook@0.2.5:
   dependencies:
     glob "^6.0.1"
     mkdirp "^0.5.1"
+
+nativescript-material-activityindicator@^2.3.23:
+  version "2.3.23"
+  resolved "https://registry.yarnpkg.com/nativescript-material-activityindicator/-/nativescript-material-activityindicator-2.3.23.tgz#446e2131e848240e32d6ac49e046d241283f6438"
+  integrity sha512-y4HitSoTOqpFP/EU4H4vsrK7c9lPZi8FyLJRkXNJZlKM3Emp2gpn5NJCi86N5SfX/WOVE2AIf9zlyX/vWuQdbA==
+  dependencies:
+    nativescript-material-core "^2.3.23"
+
+nativescript-material-core@^2.3.23:
+  version "2.3.23"
+  resolved "https://registry.yarnpkg.com/nativescript-material-core/-/nativescript-material-core-2.3.23.tgz#d4c01738c2f7ac53852e7e7425d2179a04906d55"
+  integrity sha512-Nnmn6/tPH5QBsHePX85lyRkRi8/fXTmZVRWK/Rw5EioXUcJmZxScvSJAd+tSAVLwqsodCBg8O07GBJkyQrDhuA==
 
 nativescript-toast@^2.0.0:
   version "2.0.0"

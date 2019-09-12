@@ -13,7 +13,8 @@
                 type: String
             },
             password: {
-                type: Boolean
+                type: Boolean,
+                default: false
             }
         },
         methods: {
@@ -59,7 +60,17 @@
         opacity: 0.4;
         placeholder-color: #ffffff;
     }
+    Label {
+        animation-name: bounceIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+    }
     TextField {
+        animation-name: bounceIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
         color: #ffffff;
         font-size: 14;
         border-bottom-width: 2;
