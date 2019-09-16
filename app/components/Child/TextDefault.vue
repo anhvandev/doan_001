@@ -63,14 +63,12 @@
     Label {
         animation-name: bounceIn;
         animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-delay: 0s;
+        animation-fill-mode: both;
     }
     TextField {
         animation-name: bounceIn;
         animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-delay: 0s;
+        animation-fill-mode: both;
         color: #ffffff;
         font-size: 14;
         border-bottom-width: 2;

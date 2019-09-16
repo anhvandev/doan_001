@@ -56,10 +56,6 @@
     }
 
     .logo {
-        animation-name: bounceIn;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-delay: 0s;
         width: 100%;
         height: 15%;
         display: block;

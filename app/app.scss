@@ -1,6 +1,7 @@
 // Global SCSS styling
 // @see https://docs.nativescript.org/ui/styling
 @import './animate.css';
+
 * {
   font-family: 'Quicksand-Regular';
   font-size: 20;
@@ -16,4 +17,24 @@
 
 .input-prima:focus {
   border-bottom-color: #8BA4F9;
+}
+
+.fa {
+    font-family: "Font Awesome 5 Pro", "fa-regular-400";
+    font-weight: 400;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Pro", "fa-solid-900";
+    font-weight: 900;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+    font-weight: 400;
+}
+
+.fal {
+    font-family: "Font Awesome 5 Pro", "fa-light-300";
+    font-weight: 300;
 }

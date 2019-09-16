@@ -55,7 +55,7 @@
                 if (this.password === '') {
                     alert('Bạn chưa nhập mật khẩu');
                 }*/
-
+                this.$navigateTo(route.home);
             },
             register() {
                 /*const login = this.$refs.LoginPage.nativeView;
@@ -65,7 +65,7 @@
                 }).then(() => {
                     this.$navigateTo(Register);
                 }, () => {});*/
-                this.$navigateTo(route.home);
+                this.$navigateTo(Register);
 
             }
         }
@@ -81,10 +81,6 @@
     }
 
     .logo {
-        animation-name: bounceIn;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-delay: 0s;
         width: 100%;
         height: 15%;
         display: block;
