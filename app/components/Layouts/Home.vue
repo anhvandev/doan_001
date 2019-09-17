@@ -15,32 +15,19 @@
                 <Label class="drawer-item" text="Item 2" />
                 <Label class="drawer-item" text="Item 3" />
             </StackLayout>
-            <ScrollView ~mainContent orientation="vertical">
-                <ScrollView orientation="horizontal" height="80">
-                    <FlexboxLayout backgroundColor="#3c495e" flexWrap="nowrap" flexDirection="row">
-                        <card-view margin="10" elevation="40" radius="1">
-                            <stack-layout>
-                                <label text="Hello World"></label>
-                            </stack-layout>
-                        </card-view>
-                        <card-view margin="10" elevation="40" radius="1">
-                            <stack-layout>
-                                <label text="Hello World"></label>
-                            </stack-layout>
-                        </card-view>
-                        <card-view margin="10" elevation="40" radius="1">
-                            <stack-layout>
-                                <label text="Hello World"></label>
-                            </stack-layout>
-                        </card-view>
-                        <card-view margin="10" elevation="40" radius="1">
-                            <stack-layout>
-                                <label text="Hello World"></label>
-                            </stack-layout>
-                        </card-view>
-                    </FlexboxLayout>
-                </ScrollView>
-            </ScrollView>
+            <StackLayout ~mainContent orientation="horizontal" backgroundColor="#3c495e">
+                <TabView :selectedIndex="selectedIndex" tabBackgroundColor="#ccc" tabTextColor="#000000" androidTabsPosition="bottom"  @selectedIndexChange="indexChange">
+                    <TabViewItem text="&#xf036;">
+                        <Label text="Content for Tab 1" />
+                    </TabViewItem>
+                    <TabViewItem title="Tab 2">
+                        <Label text="Content for Tab 2" />
+                    </TabViewItem>
+                    <TabViewItem title="Tab 2">
+                        <Label text="Content for Tab 2" />
+                    </TabViewItem>
+                </TabView>
+            </StackLayout>
         </RadSideDrawer>
 
 
@@ -52,7 +39,7 @@
         name: "Home",
         data(){
             return {
-
+                selectedIndex: 0
             }
         },
         computed: {
@@ -63,6 +50,9 @@
         methods: {
             onMenuTap() {
                 this.$refs.drawer.toggleDrawerState();
+            },
+            indexChange(args){
+                console.log();
             }
         }
     }
@@ -86,5 +76,9 @@
 
     .btn-search {
         width: 10%;
+    }
+    TabViewItem{
+        font-size: 10;
+        font-family: "Font Awesome 5 Pro", "fa-regular-400";
     }
 </style>
