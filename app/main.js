@@ -4,7 +4,8 @@ import store from './store';
 import ActivityIndicatorPlugin from 'nativescript-material-activityindicator/vue';
 import RadSideDrawerPlugin from "nativescript-ui-sidedrawer/vue";
 import {TNSFontIcon, fonticon} from 'nativescript-fonticon';
-import NSVueShadow from 'nativescript-vue-shadow';
+import BottomNavigationBar from 'nativescript-bottom-navigation/vue';
+import BubbleNavigation from "nativescript-bubble-navigation/vue";
 
 // Prints Vue logs when --env.production is *NOT* set while building
 Vue.config.silent = (TNS_ENV === 'production');
@@ -14,7 +15,8 @@ Vue.registerElement('CarouselItem', () => require('nativescript-carousel').Carou
 Vue.registerElement('CardView', () => require('@nstudio/nativescript-cardview').CardView);
 Vue.use(ActivityIndicatorPlugin);
 Vue.use(RadSideDrawerPlugin);
-Vue.use(NSVueShadow);
+Vue.use(BottomNavigationBar);
+Vue.use(BubbleNavigation);
 
 TNSFontIcon.debug = true;
 TNSFontIcon.paths = {

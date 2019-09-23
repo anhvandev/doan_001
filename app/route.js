@@ -1,9 +1,9 @@
 import Login from "./components/Layouts/Login";
 import Register from "./components/Layouts/Register";
-import Home from "./components/Layouts/Home";
+import HomeScreen from "./components/Layouts/HomeScreen";
 
 export default {
     login: Login,
     register: Register,
-    home: Home
+    home: HomeScreen
 }
