@@ -649,6 +649,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@nstudio/nativescript-cardview@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@nstudio/nativescript-cardview/-/nativescript-cardview-1.0.0.tgz#00d22c727c793bb72234c15d558e9bb76b0dc28b"
+  integrity sha512-5lSkLKaDk3U3OQTM5h7yfChJx+hq0SIBZOI+mpspzGG7rvDmJVP6Hle3nlnYha0lWd7RhXpHbl0KAN/zpqcoSQ==
+
 "@vue/component-compiler-utils@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-3.0.0.tgz#d16fa26b836c06df5baaeb45f3d80afc47e35634"
@@ -1152,10 +1157,10 @@ bluebird@^3.1.1, bluebird@^3.5.1, bluebird@^3.5.5:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.5.tgz#a8d0afd73251effbbd5fe384a77d73003c17a71f"
   integrity sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
 
-bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
-  version "4.11.8"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
-  integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.11.9:
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
+  integrity sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==
 
 body-parser@1.19.0:
   version "1.19.0"
@@ -1197,7 +1202,7 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-brorand@^1.0.1:
+brorand@^1.0.1, brorand@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
   integrity sha1-EsJe/kCkXjwyPrhnWgoM5XsiNx8=
@@ -2001,17 +2006,17 @@ electron-to-chromium@^1.3.247:
   integrity sha512-NWJ5TztDnjExFISZHFwpoJjMbLUifsNBnx7u2JI0gCw6SbKyQYYWWtBHasO/jPtHym69F4EZuTpRNGN11MT/jg==
 
 elliptic@^6.0.0:
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.1.tgz#c380f5f909bf1b9b4428d028cd18d3b0efd6b52b"
-  integrity sha512-xvJINNLbTeWQjrl6X+7eQCrIy/YPv5XCpKW6kB5mKvtnGILoLDcySuwomfdzt0BMdLNVnuRNTuzKNHj0bva1Cg==
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
+  integrity sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==
   dependencies:
-    bn.js "^4.4.0"
-    brorand "^1.0.1"
+    bn.js "^4.11.9"
+    brorand "^1.1.0"
     hash.js "^1.0.0"
-    hmac-drbg "^1.0.0"
-    inherits "^2.0.1"
-    minimalistic-assert "^1.0.0"
-    minimalistic-crypto-utils "^1.0.0"
+    hmac-drbg "^1.0.1"
+    inherits "^2.0.4"
+    minimalistic-assert "^1.0.1"
+    minimalistic-crypto-utils "^1.0.1"
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -2681,7 +2686,7 @@ he@^1.1.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-hmac-drbg@^1.0.0:
+hmac-drbg@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
   integrity sha1-0nRXAQJabHdabFRXk+1QL8DGSaE=
@@ -2820,7 +2825,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
+inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
@@ -3423,7 +3428,7 @@ minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
   integrity sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==
 
-minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
+minimalistic-crypto-utils@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
@@ -3564,6 +3569,16 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+nativescript-bottom-navigation@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/nativescript-bottom-navigation/-/nativescript-bottom-navigation-2.0.5.tgz#91f73902127c0d434dec6af525442d95a73d8a57"
+  integrity sha512-mRRaMQ1+EUChEEtJSuUbfFWzowi8KYtVzG/XXdxkwBLUBJmA4efFb6HIQH2Q7Xpdqxa5Wm8iaQ1mdWzUIoBgUA==
+
+nativescript-bubble-navigation@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/nativescript-bubble-navigation/-/nativescript-bubble-navigation-1.0.3.tgz#9b26a7411565d1ca889f776970d4b2b07009e1ff"
+  integrity sha512-Fgprn3WEwRbjSeUBIekn6+TlRfytZASk3+wRqRJmR6L0CLFYqoMOcbAzNiV/EydwCFVvJAvA7h8JYWHAz97pIw==
+
 nativescript-carousel@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/nativescript-carousel/-/nativescript-carousel-6.1.0.tgz#e4f1626b183cb56282d3930be578d0358821206b"
@@ -3602,6 +3617,11 @@ nativescript-dev-webpack@^1.0.0:
     webpack-cli "~3.1.1"
     webpack-sources "~1.3.0"
 
+nativescript-fonticon@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/nativescript-fonticon/-/nativescript-fonticon-2.0.2.tgz#4133a56be6d163a4fa76fceffe8ec9706f32b932"
+  integrity sha512-VMCPzfJktrnb//3RVHEZZwpP3g8Ix1imhEGTdwZLKfRLTxER3yuVEKpZLqsc3gJmRAMkHCIm7jZs8Am21Lby5Q==
+
 nativescript-gradient@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/nativescript-gradient/-/nativescript-gradient-2.0.1.tgz#b74d4efd14bd85265a57e881e4be83fd819e03c5"
@@ -3639,6 +3659,18 @@ nativescript-toast@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/nativescript-toast/-/nativescript-toast-2.0.0.tgz#ef3245d0c35d50ca10da4554d1459356a99687aa"
   integrity sha512-xqyNfFS894oGfrEVO7CjpioAQLiLNNcd77Euq9XIUTf1U3W0PsIgAJbLP7+kkVGIJxdLtlBkbcQ4wDmf2DCi1w==
+
+nativescript-ui-core@~3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/nativescript-ui-core/-/nativescript-ui-core-3.0.0.tgz#94692416e3f79950c3b1e7d87f8f82f4d620e740"
+  integrity sha512-gEaooNnuLiAHSPlh2zfEkdc4sq7Z/0UtubiQbLjW3KvG8iyF6/jFQNmNEIr/RvcoZ9jVtEVmbdnaeA2MfpJQ+w==
+
+nativescript-ui-sidedrawer@^7.0.1:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/nativescript-ui-sidedrawer/-/nativescript-ui-sidedrawer-7.0.4.tgz#f47e12f1463315fc7085be16352844cad4e84890"
+  integrity sha512-RZsXfjSvnxC78mnplWDVx/AMIhP1VGXx6vSzlE3dADQhollVCxEgcQtxsnmL0ochTrYHayp7BBfEmtIs7AWHUg==
+  dependencies:
+    nativescript-ui-core "~3.0.0"
 
 nativescript-vue-template-compiler@^2.0.0:
   version "2.4.0"
